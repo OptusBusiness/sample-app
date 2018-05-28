@@ -14,5 +14,9 @@ def devops():
     return f.read()
 
 
+@app.route("/remote")
+def remote():
+    return "<h1>GitHub</h1>"
+
 if __name__ == "__main__":
     app.run()
